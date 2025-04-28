@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEPPO Pub</title>
+    <!-- Bootstrap JS -->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+</head>
+
+<body id="page-top">
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#page-top">
+        <!-- Logo Placeholder -->
+        <img class="animate__animated animate__tada" src="../img/download.png" width="100px" >
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#page-top">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">MENU</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PRENOTA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTATTI</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5 pt-5">
+    <div class="row">
+      <div class="col-xl-7 reveal" id="slogan">
+        <h1>Geppo Night Beer</h1>
+        <h2>MAGNA BEVI RIDI</h2>
+      </div>
+      <div class="col-xl-5 slogan-img zoom">
+        <!-- Hero Image Placeholder -->
+        <img src="#" alt="Hero Image">
+      </div>
+    </div>
+  </div>
+  <hr>
+</header>
+
+<main>
+  <!-- Section 1 -->
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-7 strip-col-text reveal">
+        <h2>MENU</h2>
+        <p>Section description text goes here.</p>
+        <a href="#"><button class="btn btn-primary" type="button">Button 1</button></a>
+      </div>
+      <div class="col-md-5 strip-col-img reveal">
+        <img src="#" alt="Section Image 1" class="img-fluid">
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 2 -->
+  <div class="container py-5">
+    <div class="row flex-wrap-reverse">
+      <div class="col-md-5 strip-col-img reveal">
+        <img src="#" alt="Section Image 2" class="img-fluid">
+      </div>
+      <div class="col-md-7 strip-col-text reveal">
+        <h2>PRENOTA</h2>
+        <p>Section description text goes here.</p>
+        <a href="#"><button class="btn btn-primary" type="button">Button 2</button></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 3 -->
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-7 strip-col-text reveal">
+        <h2>CONTATTI</h2>
+        <p></p>
+        <a href="#"><button class="btn btn-primary" type="button">Button 3</button></a>
+      </div>
+      <div class="col-md-5 strip-col-img reveal">
+        <img src="#" alt="Section Image 3" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-dark text-white text-center py-4">
+  <div class="container">
+    <p class="mb-2">Follow us on social media!</p>
+    <!-- Social Icons Placeholder -->
+    <div class="d-flex justify-content-center">
+      <a href="#" class="btn btn-outline-light btn-floating m-1">Icon 1</a>
+      <a href="#" class="btn btn-outline-light btn-floating m-1">Icon 2</a>
+      <a href="#" class="btn btn-outline-light btn-floating m-1">Icon 3</a>
+    </div>
+  </div>
+  <hr>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">&copy; 2025 Your Company</div>
+      <div class="col-lg-6">
+        <a href="#" class="text-white">Admin Login</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  ScrollReveal().reveal('.reveal', { distance: '100px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 500 });
+  ScrollReveal().reveal('.zoom', { duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', scale: 0.65 });
+</script>
+
+</body>
+</html>
