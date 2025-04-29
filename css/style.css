@@ -31,6 +31,7 @@ hr {
 }
 
 .my-btn:hover {
+    background-color: blue;
     border-style: double;
 }
 
