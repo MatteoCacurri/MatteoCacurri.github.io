@@ -1,31 +1,27 @@
-#spazioNav{
-    width: 800px;
-}
-.navbar-nav:hover .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus, 
-.navbar-dark .navbar-nav .nav-link:hover, #default{
-    color: #caa015;
-}
-body, .bg-dark, .navbar-dark .navbar-nav .nav-link{
-    background-color: #182026 !important;
+body, .bg-dark, .navbar-dark .navbar-nav .nav-link {
+    background-color: #8B0000 !important;  /* Rosso scuro */
     font-family: Montserrat;
     color: rgb(255, 255, 255);
 }
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../font/Montserrat.ttf');
+
+#spazioNav{
+    width: 800px;
 }
-hr{
-    color: #caa015;
+
+hr {
+    color: #8B0000;
     width: 900px;
     margin: 0 auto;
-    padding-top: 2px
+    padding-top: 2px;
 }
+
 .border_radius { 
     border-radius: 40px 40px 40px 40px; 
 } 
-.my-btn{
+
+.my-btn {
     margin-top: 20px;
-    background-color: #caa015;
+    background-color: #8B0000;
     text-align: center;
     border-radius: 20px;
     font-size: 28px;
@@ -33,30 +29,38 @@ hr{
     border-style: none;
     height: 60px;
 }
-.my-btn:hover{
+
+.my-btn:hover {
     border-style: double;
 }
-#footer-text{
+
+#footer-text {
+    background-color: #8B0000;  /* Rosso scuro */
     padding-top: 0px; 
     height: 60px;
 }
-#footer-text .col-4{
+
+#footer-text .col-4 {
     margin: 0px;
     padding: 0px;
 }
-#footer-text  a{
-    color: #caa015;
+
+#footer-text a {
+    color: #8B0000;
 }
-/* effetto passaggio del mouse su icone doppie */
-#immagini_doppie{
+
+#immagini_doppie {
     text-align: center;
 }
-#mouse-hover{
+
+#mouse-hover {
     display: none;
 }
-/*#immagini_doppie:hover #no-hover{
+
+#immagini_doppie:hover #no-hover {
     display: none;
 }
-#immagini_doppie:hover #mouse-hover{
+
+#immagini_doppie:hover #mouse-hover {
     display: inline-block;
-}*/
+}

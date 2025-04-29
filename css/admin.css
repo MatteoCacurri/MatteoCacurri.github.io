@@ -14,7 +14,7 @@ body{
     transform: translate(-50%,-50%);
     box-sizing: border-box;
     padding: 70px 30px;
-    border: 3px solid #caa015;
+    border: 3px solid #dc0f0f;
     border-radius: 20px;
 }
 .log-failed .logo{
@@ -38,7 +38,7 @@ body{
     padding: 0;
 }
 .log-failed a{
-    color: #caa015;
+    color: #dc0f0f;
 }
 
 h1{
@@ -50,13 +50,13 @@ h3{
     text-align: left;
 }
 span{
-    color: #caa015;
+    color: #dc0f0f;
     font-style: italic;
 }
 .card{
     width: 350px;
     background-color: transparent;
-    border: 2px solid #caa015;
+    border: 2px solid #dc0f0f;
     border-radius: 30px;
 }
 h5{
@@ -64,14 +64,14 @@ h5{
 }
 .header{
     font-weight: bold;
-    color: #caa015;
+    color: #dc0f0f;
 }
 #cestino-img{
     width: 25px;
     height: 25px;
 }
 #cestino-div{
-    border-top: 2px solid #caa015;
+    border-top: 2px solid #dc0f0f;
     padding-top: 10px;
     padding-bottom: 5px;
     text-align: center;
@@ -89,7 +89,7 @@ h5{
     transition: .3s ease-in-out;
 }
 #tasto_plus{
-    background-color: #caa015;
+    background-color: #dc0f0f;
     border-radius: 30px;
     width: 50px;
     height: 50px;
@@ -110,16 +110,16 @@ h5{
     color:black;
 }
 label.error{
-    color:#ff0000;
+    color:#0fb6dc;
 }
 
 .btn-primary {
-    background-color: #caa015;
-    border-color: #caa015;
+    background-color: #dc0f0f;
+    border-color: #dc0f0f;
 }
 .btn-primary:hover {
-    background-color: #ecbb1a;
-    border-color: #caa015;
+    background-color: #dc0f0f;
+    border-color: #dc0f0f;
 }
 
 .logo{
@@ -129,14 +129,14 @@ label.error{
 .modal-content{
     background-color: #182026;
     border: solid 2px;
-    border-color: #caa015;
+    border-color: #dc0f0f;
 }
 
 .form-label, #modalLabel{
     color: white;
 }
 #close{
-    background-color: #caa015;
+    background-color: #dc0f0f;
     border-radius: 30px;
 }
 
@@ -164,7 +164,7 @@ label.error{
     color: white;
 }
 .header-nav:hover{
-    color: #caa015;
+    color: #dc0f0f;
 }
 
 ul{

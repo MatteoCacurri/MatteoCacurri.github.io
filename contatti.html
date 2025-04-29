@@ -2,10 +2,117 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contatti</title>
+    <title>Cocktail Bar</title>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/contatti.css">
 </head>
-<body>
-    
+<body id="page-top">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#page-top">
+          <img class="animate__animated animate__tada" src="img/logo.png" width="90px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="spazioNav"></div>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">MENU</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="prenotazione.html">PRENOTA</a>
+            </li>
+            <li class="nav-item">
+              <a id="default" class="nav-link active" aria-current="page" href="#page-top">CONTATTI</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 contatti-col">
+          <h3 class="reveal">Dove siamo:</h3>
+          <br>
+          <!-- MAPPA -->
+          <iframe class ="border_radius reveal" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.9560454480093!2d12.49096111481527!3d41.893802372411514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b0e5a2cc33%3A0xbc0c706fe0494c9e!2sPiazza%20di%20San%20Pietro%20in%20Vincoli%2C%204%2Fa%2C%2000184%20Roma%20RM!5e0!3m2!1sit!2sit!4v1651609606759!5m2!1sit!2sit" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-md-6 contatti-col">
+          <h3 class="reveal_footer">Contatti:</h3>
+          <br>
+          <h3 class="reveal_footer">Telefono: +39 338 3795345</h3>
+          <h3 class="reveal_footer">e-mail: bite01@info.com</h3>
+          <div class="container p-4">
+            <!-- Sezione Social -->
+            <section class="mb-4">
+              <a class="btn m-1 reveal_footer" href="#!" id="immagini_doppie">
+                <img src="img/fb_yellow.png" width="50%" id="no-hover">
+                <img src="img/fb-original.png" width="50%" id="mouse-hover">
+              </a>
+              <a class="btn m-1 reveal_footer" href="#!" id="immagini_doppie">
+                <img src="img/ig_yellow.png" width="50%" id="no-hover">
+                <img src="img/ig-original.png" width="50%" id="mouse-hover">
+              </a>
+              <a class="btn m-1 reveal_footer" href="#!" id="immagini_doppie">
+                <img src="img/tw_yellow.png" width="50%" id="no-hover">
+                <img src="img/tw-original.png" width="50%" id="mouse-hover">
+              </a>
+              <a class="btn m-1 reveal_footer" href="#!" id="immagini_doppie">
+                <img src="img/tr_yellow.png" width="50%" id="no-hover">
+                <img src="img/tr-original.png" width="50%" id="mouse-hover">
+              </a>
+            </section>
+            <h3 class="reveal_footer">Gli sviluppatori:</h3>
+            <br>
+            <div class="row">
+              <div class="col-md-6 contatti-col">
+                <img class ="border_radius reveal_footer foto-nostre" src="img/ale.png">
+                <h4 class="reveal_footer">@ale_biaggio</h4>
+              </div>
+              <div class="col-md-6 contatti-col div-gab">
+                <img class ="border_radius reveal_footer foto-nostre" src="img/gab.png">
+                <h4 class="reveal_footer">@gabrielecireddu</h4>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="bg-dark text-center text-white">
+    </div>
+    <!-- Copyright -->
+    <div class="row container-fluid" id="footer-text">
+      <div class="col-lg-6">
+        © 2022 Copyright:
+        <a class="text-white" >AleBiaggio Cirus</a>
+      </div>
+      <div class="col-lg-6">
+        Sei un admin? Effettua il <a href="login.html">Login</a>   
+      </div>
+    </div> 
+  </footer>
+
+<script>
+  ScrollReveal().reveal('.reveal', { distance: '100px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 1300});
+
+  ScrollReveal().reveal('.reveal_footer', { distance: '50px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 300});
+
+  ScrollReveal().reveal('.zoom', {duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 500, scale: 0.65});
+</script>
+
 </body>
 </html>
