@@ -54,9 +54,9 @@ hr{
 #mouse-hover{
     display: none;
 }
-/*#immagini_doppie:hover #no-hover{
+#immagini_doppie:hover #no-hover{
     display: none;
 }
 #immagini_doppie:hover #mouse-hover{
     display: inline-block;
-}*/
+}
