@@ -12,12 +12,12 @@ main{
 }
 #slogan h1{
     font-family: 'DancingScript', sans-serif;
-    font-size: 220px;
+    font-size: 170px;
     text-align: center;
 }
 #slogan span{
     font-family: 'DancingScript', sans-serif;
-    font-size: 220px;
+    font-size: 180px;
     color: #caa015;
 }
 #slogan h2{
@@ -51,8 +51,8 @@ main{
 }
 .strip-col-text h2{
     padding-left: 20px;
-    font-size: 70px;
-    border-left: 5px solid #caa015;
+    font-size: 80px;
+    border-left: 5px solid #000000;
 }
 .strip-col-text p{
     padding-top: 20px;
