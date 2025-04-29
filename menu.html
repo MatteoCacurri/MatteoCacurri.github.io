@@ -44,72 +44,102 @@
     </nav>
   </header>
   <main>
-    <div class="carousel-inner">
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
-          <img src="img/margarita.jpg" class="d-block w-100" alt="Margarita">
-          <div class="carousel-caption d-sm-block">
-            <h3>MARGARITA</h3>
-            <p>
-              Grande classico dalle misteriose origini, il Margarita è un cocktail 
-              after dinner a base di tequila, ideale da sorseggiare dopo cena in una serata in compagnia, 
-              o come drink da aperitivo.
-            </p>
+    <!--Menu Cocktail-->
+    <div><h3 class="reveal">I nostri cocktail:</h3></div>
+    <div id="carousel1" class="carousel slide reveal" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carousel1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carousel1" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-img-wrapper">
+              <img src="img\pexels-timur-weber-8679607.png" class="d-block w-40" style="max-width: 40;" alt="Margarita">
+            </div>
+            <div class="carousel-caption d-sm-block">
+              <h3>MARGARITA</h3>
+              <p>
+                Grande classico dalle misteriose origini, il Margarita è un cocktail 
+                after dinner a base di tequila, ideale da sorseggiare dopo cena in una serata in compagnia, 
+                o come drink da aperitivo.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="opacity">
+              <video autoplay muted loop id="video-lg">
+                <source class="d-block w-100" src="video/mojito-lg.mp4" type="video/mp4">
+              </video>
+              <video autoplay muted loop id="video-sm">
+                <source class="d-block w-100" src="video/mojito-sm.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="carousel-caption d-sm-block">
+              <h3>MOJITO</h3>
+              <p>
+                Cocktail che intreccia la sua storia a quella di Cuba, anche se alcuni sostengono
+                sia stato inventato durante il proibizionismo. Con rum, zucchero di canna, soda e menta, 
+                è uno dei drink più famosi al mondo.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="opacity">
+              <video autoplay muted loop id="video-lg">
+                <source class="d-block w-100" src="video/cosmopolitan-lg.mp4" type="video/mp4">
+              </video>
+              <video autoplay muted loop id="video-sm">
+                <source class="d-block w-100" src="video/cosmopolitan-sm.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="carousel-caption d-sm-block">
+              <h3>COSMOPOLITAN</h3>
+              <p>
+                Drink icona negli Stati Uniti e nel mondo, il Cosmopolitan è un classico intramontabile,
+                nato negli anni '90 a New York. Un'elegante fusione di Gin, Cointreau, 
+                succo di limone e sciroppo di lamponi.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="opacity">
+              <video autoplay muted loop id="video-lg">
+                  <source class="d-block w-100" src="video/martini-lg.mp4" type="video/mp4">
+              </video>
+              <video autoplay muted loop id="video-sm">
+                <source class="d-block w-100" src="video/martini-sm.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="carousel-caption d-sm-block">
+              <h3>DRY MARTINI</h3>
+              <p>
+                Negli anni '50 il Dry Martini passa dall'essere una ricetta, a uno stile di tendenza.
+                Ghiacciato, secco e dal forte tenore alcolico, è il marchio di fabbrica di James Bond.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="opacity">
+              <video autoplay muted loop id="video-lg">
+                <source class="d-block w-100" src="video/paloma-lg.mp4" type="video/mp4">
+              </video>
+              <video autoplay muted loop id="video-sm">
+                <source class="d-block w-100" src="video/paloma-sm.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="carousel-caption d-sm-block">
+              <h3>PALOMA</h3>
+              <p>
+                Il Paloma cocktail è un drink messicano fresco e fruttato a base di tequila, 
+                succo di lime e soda al pompelmo. Si tratta di un classico cocktail da aperitivo, 
+                molto popolare in Messico.
+              </p>
+            </div>
           </div>
         </div>
-      
-        <!-- Slide 2 -->
-        <div class="carousel-item">
-          <img src="img/mojito.jpg" class="d-block w-100" alt="Mojito">
-          <div class="carousel-caption d-sm-block">
-            <h3>MOJITO</h3>
-            <p>
-              Cocktail che intreccia la sua storia a quella di Cuba, anche se alcuni sostengono
-              sia stato inventato durante il proibizionismo. Con rum, zucchero di canna, soda e menta, 
-              è uno dei drink più famosi al mondo.
-            </p>
-          </div>
-        </div>
-      
-        <!-- Slide 3 -->
-        <div class="carousel-item">
-          <img src="img/cosmopolitan.jpg" class="d-block w-100" alt="Cosmopolitan">
-          <div class="carousel-caption d-sm-block">
-            <h3>COSMOPOLITAN</h3>
-            <p>
-              Drink icona negli Stati Uniti e nel mondo, il Cosmopolitan è un classico intramontabile,
-              nato negli anni '90 a New York. Un'elegante fusione di Gin, Cointreau, 
-              succo di limone e sciroppo di lamponi.
-            </p>
-          </div>
-        </div>
-      
-        <!-- Slide 4 -->
-        <div class="carousel-item">
-          <img src="img/martini.jpg" class="d-block w-100" alt="Martini">
-          <div class="carousel-caption d-sm-block">
-            <h3>DRY MARTINI</h3>
-            <p>
-              Negli anni '50 il Dry Martini passa dall'essere una ricetta, a uno stile di tendenza.
-              Ghiacciato, secco e dal forte tenore alcolico, è il marchio di fabbrica di James Bond.
-            </p>
-          </div>
-        </div>
-      
-        <!-- Slide 5 -->
-        <div class="carousel-item">
-          <img src="img/paloma.jpg" class="d-block w-100" alt="Paloma">
-          <div class="carousel-caption d-sm-block">
-            <h3>PALOMA</h3>
-            <p>
-              Il Paloma cocktail è un drink messicano fresco e fruttato a base di tequila, 
-              succo di lime e soda al pompelmo. Si tratta di un classico cocktail da aperitivo, 
-              molto popolare in Messico.
-            </p>
-          </div>
-        </div>
-      </div>
-      
         <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -224,10 +254,6 @@
         <a class="btn m-1" href="#!" id="immagini_doppie">
           <img src="../img/ig_yellow.png" width="50%" id="no-hover">
           <img src="../img/ig-original.png" width="50%" id="mouse-hover">
-        </a>
-        <a class="btn m-1" href="#!" id="immagini_doppie">
-          <img src="../img/tw_yellow.png" width="50%" id="no-hover">
-          <img src="../img/tw-original.png" width="50%" id="mouse-hover">
         </a>
         <a class="btn m-1" href="#!" id="immagini_doppie">
           <img src="../img/tr_yellow.png" width="50%" id="no-hover">
