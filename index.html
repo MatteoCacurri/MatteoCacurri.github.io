@@ -55,7 +55,9 @@
         <h1>Geppo Night Beer</h1>
         <h2>MANGIA BEVI RIDI</h2>
       </div>
-      <div class="col-xl-5 slogan-img zoom">
+      <div class="col-xl-5 slogan-img zoom" id="immagini-doppie">
+        <img src="img/download.png" id="no-hover">
+        <img src="img/download.png" id="mouse-hover">
         <!-- Hero Image Placeholder -->
         <img src="#" alt="Hero Image">
       </div>
@@ -65,47 +67,65 @@
 </header>
 
 <main>
-  <!-- Section 1 -->
-  <div class="container py-5">
+  <!--Descrizioni locale-->
+  <div class="container">
     <div class="row">
       <div class="col-md-7 strip-col-text reveal">
+        <h2>Location</h2>
+        <p> 
+          Il nostro pub si trova è situato in Via Tiburto, 
+          accanto al centro soertivo e a due passi dal centro città. 
+          Vicino al locale potrai trovare un parcheggio per raggiungere comodamente il nostro locale.
+        </p>
+        <a href="contatti.html"><button class="my-btn" type="button" id="dove-siamo-btn">DOVE SIAMO</button></a>
+      </div>
+      <div class="col-md-5 strip-col-img reveal">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img\contribution_gallery.png">
+            <source media="(min-width: 768px)" srcset = "img\contribution_gallery.png">
+            <img src="img\contribution_gallery.png"/>
+        </picture>       
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row flex-wrap-reverse reveal">
+      <div class="col-md-5 strip-col-img">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img\istockphoto-1150368715-2048x2048.jpg">
+            <source media = "(min-width: 768px)" srcset = "img\istockphoto-1150368715-2048x2048.jpg">
+            <img src="img\istockphoto-1150368715-2048x2048.jpg"/>
+        </picture > 
+      </div>
+      <div class="col-md-7 strip-col-text reveal" id="food-text">
         <h2>MENU</h2>
-        <p>Section description text goes here.</p>
-        <a href="#"><button class="btn btn-primary" type="button">Button 1</button></a>
-      </div>
-      <div class="col-md-5 strip-col-img reveal">
-        <img src="#" alt="Section Image 1" class="img-fluid">
-      </div>
-    </div>
-  </div>
-
-  <!-- Section 2 -->
-  <div class="container py-5">
-    <div class="row flex-wrap-reverse">
-      <div class="col-md-5 strip-col-img reveal">
-        <img src="#" alt="Section Image 2" class="img-fluid">
-      </div>
-      <div class="col-md-7 strip-col-text reveal">
-        <h2>PRENOTA</h2>
-        <p>Section description text goes here.</p>
-        <a href="#"><button class="btn btn-primary" type="button">Button 2</button></a>
+        <p> 
+          Vieni a scoprire il nostro fantastico menu ispirato alla cucina locale!
+          Anipasti,primi piatti,secondi,dolci e bevande ti aspettano da Geppo Night Beer.
+        </p>
+        <a href="menu.html"><button class="my-btn" type="button" id="menu-btn">MENU</button></a>         
       </div>
     </div>
   </div>
-
-  <!-- Section 3 -->
-  <div class="container py-5">
+  <div class="container">
     <div class="row">
       <div class="col-md-7 strip-col-text reveal">
-        <h2>CONTATTI</h2>
-        <p></p>
-        <a href="#"><button class="btn btn-primary" type="button">Button 3</button></a>
+        <h2>Prenota</h2>
+        <p> 
+          Abbiamo creato un sistema di prenotazione per i nostri clienti.
+          Scegli il tavolo che ti piace di piu e te lo riserveremo per l'orario piu comodo per te! 
+        </p>
+        <a href="prenotazione.html"><button class="my-btn" type="button" id="prenota-btn">PRENOTA</button></a>
       </div>
       <div class="col-md-5 strip-col-img reveal">
-        <img src="#" alt="Section Image 3" class="img-fluid">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img\1-f38ecc3c.png">
+            <source media = "(min-width: 768px)" srcset = "img\1-f38ecc3c.png">
+            <img src="img\1-f38ecc3c.png"/>
+        </picture >         
       </div>
     </div>
-  </div>
+  </div> 
 </main>
 <!--Footer-->
 <footer class="bg-dark text-white text-center py-4">
