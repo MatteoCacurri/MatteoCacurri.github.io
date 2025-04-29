@@ -26,11 +26,12 @@ footer{
 
 #img-lg{
     min-width: 100%;
-    max-width: 100%;
+    max-width: 200%;
+    object-fit: contain;
 }
 #img-sm{
     min-width: 100%;
-    max-width: 100%;
+    max-width: 200%;
     display: none;
 }
 #navbarToggler{
