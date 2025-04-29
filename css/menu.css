@@ -27,7 +27,7 @@ footer{
 .carousel-img {
     width: 100%;
     height: auto; /* mantiene le proporzioni */
-    max-height: 400px; /* o quanto preferisci */
+    max-height: 300px; /* o quanto preferisci */
     object-fit: cover; /* utile se vuoi riempire l’area tagliando un po’ */
   }
   
