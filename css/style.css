@@ -1,5 +1,5 @@
 body, .bg-dark, .navbar-dark .navbar-nav .nav-link {
-    background-color: #8B0000 !important;  /* Rosso scuro */
+    background-color: #cb2e2e !important;  /* Rosso scuro */
     font-family: Montserrat;
     color: rgb(255, 255, 255);
 }
@@ -9,7 +9,7 @@ body, .bg-dark, .navbar-dark .navbar-nav .nav-link {
 }
 
 hr {
-    color: #8B0000;
+    color: #cb2e2e;
     width: 900px;
     margin: 0 auto;
     padding-top: 2px;
@@ -21,7 +21,7 @@ hr {
 
 .my-btn {
     margin-top: 20px;
-    background-color: #8B0000;
+    background-color: #000000;
     text-align: center;
     border-radius: 20px;
     font-size: 28px;
@@ -35,7 +35,7 @@ hr {
 }
 
 #footer-text {
-    background-color: #8B0000;  /* Rosso scuro */
+    background-color: #cb2e2e;  /* Rosso scuro */
     padding-top: 0px; 
     height: 60px;
 }
@@ -46,7 +46,7 @@ hr {
 }
 
 #footer-text a {
-    color: #8B0000;
+    color: #cb2e2e;
 }
 
 #immagini_doppie {
