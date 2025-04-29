@@ -25,13 +25,14 @@ footer{
 }
 
 #img-lg{
+    
     min-width: 100%;
-    max-width: 200%;
-    object-fit: contain;
+    max-width: 100%;
+    display:block;
 }
 #img-sm{
-    min-width: 100%;
-    max-width: 200%;
+    min-width:100%;
+    max-width: 100%; 
     display: none;
 }
 #navbarToggler{
