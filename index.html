@@ -19,7 +19,7 @@
 </head>
 
 <body id="page-top">
-
+<!--Navbar e slogan-->
 <header>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
@@ -36,13 +36,13 @@
             <a class="nav-link active" aria-current="page" href="#page-top">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">MENU</a>
+            <a class="nav-link" href="menu.html">MENU</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">PRENOTA</a>
+            <a class="nav-link" href="prenota.html">PRENOTA</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">CONTATTI</a>
+            <a class="nav-link" href="contatti.html">CONTATTI</a>
           </li>
         </ul>
       </div>
@@ -53,7 +53,7 @@
     <div class="row">
       <div class="col-xl-7 reveal" id="slogan">
         <h1>Geppo Night Beer</h1>
-        <h2>MAGNA BEVI RIDI</h2>
+        <h2>MANGIA BEVI RIDI</h2>
       </div>
       <div class="col-xl-5 slogan-img zoom">
         <!-- Hero Image Placeholder -->
@@ -107,18 +107,30 @@
     </div>
   </div>
 </main>
-
+<!--Footer-->
 <footer class="bg-dark text-white text-center py-4">
-  <div class="container">
-    <p class="mb-2">Follow us on social media!</p>
-    <!-- Social Icons Placeholder -->
-    <div class="d-flex justify-content-center">
-      <a href="#" class="btn btn-outline-light btn-floating m-1">Icon 1</a>
-      <a href="#" class="btn btn-outline-light btn-floating m-1">Icon 2</a>
-      <a href="#" class="btn btn-outline-light btn-floating m-1">Icon 3</a>
-    </div>
-  </div>
   <hr>
+  <div class="container p-4">
+    <section class="mb-4 reveal_footer">
+      <h5>Seguici sui nostri Social Network, ti aspettiamo!</h5>
+    </section>
+    <!-- Social Icons Placeholder -->
+    <section class="mb-4 footer-icon">
+      <a class="btn m-1 reveal_footer" href="#!" id="immagini_doppie">
+        <img src="img/fb_yellow.png" width="50px" id="no-hover">
+        <img src="img/Facebook_Logo_(2019).png" width="50px" id="mouse-hover">
+      </a>
+      <a class="btn m-1 reveal_footer" href="#!" id="immagini_doppie">
+        <img src="img/ig_yellow.png" width="50px" id="no-hover">
+        <img src="img/logo-instagram-2023.png" width="50px" id="mouse-hover">
+      </a>
+      <a class="btn m-1 reveal_footer" href="#!" id="immagini_doppie">
+        <img src="img/tw_yellow.png" width="50px" id="no-hover">
+        <img src="img/png-transparent-tripadvisor-thumbnail-review-platforms-logos.png" width="50px" id="mouse-hover">
+      </a>
+    </section>
+  </div>
+<!--Copyright-->
   <div class="container">
     <div class="row">
       <div class="col-lg-6">&copy; 2025 Your Company</div>
@@ -130,7 +142,11 @@
 </footer>
 
 <script>
+
   ScrollReveal().reveal('.reveal', { distance: '100px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 500 });
+  
+  ScrollReveal().reveal('.reveal_footer', { distance: '50px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 300});
+
   ScrollReveal().reveal('.zoom', { duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', scale: 0.65 });
 </script>
 
