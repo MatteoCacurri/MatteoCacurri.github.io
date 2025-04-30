@@ -12,13 +12,14 @@ main{
 }
 #slogan h1{
     font-family: 'Lexend_Deca', sans-serif;
-    font-size: 170px;
+    font-size: 100px;
     text-align: center;
+    color: #a93636;
 }
 #slogan span{
     font-family: 'Lexend_Deca', sans-serif;
-    font-size: 180px;
-    color: #caa015;
+    font-size: 130px;
+    color: #251c1c;
 }
 #slogan h2{
     font-size: 30px;
