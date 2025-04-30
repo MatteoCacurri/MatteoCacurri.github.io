@@ -5,6 +5,18 @@ main{
     padding-left: 30px
 }
 /* CSS per lo slogan e il logo */
+
+.slogan-box {
+    border: 3px solid black;      /* bordo nero */
+    padding: 10px 20px;           /* spazio interno */
+    display: inline-block;        /* riquadro solo attorno al testo */
+    background-color: black;      /* sfondo nero pieno */
+    color: white;                 /* testo bianco per visibilità */
+    border-radius: 10px;          /* angoli arrotondati */
+  }
+  
+  
+
 #slogan{
     color: rgb(255, 255, 255);
     text-align: center;
