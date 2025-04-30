@@ -5,17 +5,20 @@ body, .bg-dark, .navbar-dark .navbar-nav .nav-link {
 }
 
 .nav-link {
-    border: 1px solid rgba(255, 255, 255, 0.3); /* bordo bianco semi-trasparente */
-    border-radius: 8px;                        /* angoli arrotondati */
-    padding: 6px 12px;                         /* spazio interno */
-    margin: 0 5px;                             /* spaziatura tra i link */
-    transition: all 0.3s ease;                 /* effetto al passaggio */
+    color: white;                              /* colore del testo normale */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* bordo chiaro iniziale */
+    border-radius: 8px;
+    padding: 6px 12px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
   }
   
   .nav-link:hover {
-    border-color: white;                      /* bordo più visibile al passaggio */
-    background-color: rgba(255, 255, 255, 0.1); /* leggero sfondo al passaggio */
+    color: black !important;                  /* testo nero al passaggio */
+    border-color: black;                      /* bordo nero */
+    background-color: white;                  /* sfondo bianco per contrasto */
   }
+  
   
 
 #spazioNav{
@@ -45,7 +48,7 @@ hr {
 }
 
 .my-btn:hover {
-    background-color: blue;
+    background-color: rgb(255, 0, 0);
     border-style: double;
 }
 
