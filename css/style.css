@@ -4,6 +4,20 @@ body, .bg-dark, .navbar-dark .navbar-nav .nav-link {
     color: rgb(255, 255, 255);
 }
 
+.nav-link {
+    border: 1px solid rgba(255, 255, 255, 0.3); /* bordo bianco semi-trasparente */
+    border-radius: 8px;                        /* angoli arrotondati */
+    padding: 6px 12px;                         /* spazio interno */
+    margin: 0 5px;                             /* spaziatura tra i link */
+    transition: all 0.3s ease;                 /* effetto al passaggio */
+  }
+  
+  .nav-link:hover {
+    border-color: white;                      /* bordo più visibile al passaggio */
+    background-color: rgba(255, 255, 255, 0.1); /* leggero sfondo al passaggio */
+  }
+  
+
 #spazioNav{
     width: 800px;
 }
