@@ -11,12 +11,12 @@ main{
     padding-top: 70px;
 }
 #slogan h1{
-    font-family: 'DancingScript', sans-serif;
+    font-family: 'Lexend_Deca', sans-serif;
     font-size: 170px;
     text-align: center;
 }
 #slogan span{
-    font-family: 'DancingScript', sans-serif;
+    font-family: 'Lexend_Deca', sans-serif;
     font-size: 180px;
     color: #caa015;
 }
@@ -38,8 +38,8 @@ main{
     margin-top: 90px;
 }
 @font-face {
-    font-family: 'DancingScript';
-    src: url('../font/DancingScript.ttf');
+    font-family: 'Lexend_Deca';
+    src: url('../font/Lexend_Deca/static/LexendDeca-Bold.ttf');
 }
 /* CSS per le strip */
 .row{
