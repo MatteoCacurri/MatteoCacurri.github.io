@@ -1,5 +1,5 @@
 body, .bg-dark, .navbar-dark .navbar-nav .nav-link {
-    background-color: #cc4545 !important;  /* Rosso scuro */
+    background-color: #D4B483       !important;  /* Rosso scuro */
     font-family: Montserrat;
     color: rgb(255, 255, 255);
 }
@@ -9,7 +9,7 @@ body, .bg-dark, .navbar-dark .navbar-nav .nav-link {
 }
 
 hr {
-    color: #cc4545;
+    color: #D4B483      ;
     width: 900px;
     margin: 0 auto;
     padding-top: 2px;
@@ -36,7 +36,7 @@ hr {
 }
 
 #footer-text {
-    background-color: #cc4545;  /* Rosso scuro */
+    background-color: #D4B483      ;  /* Rosso scuro */
     padding-top: 0px; 
     height: 60px;
 }
@@ -47,7 +47,7 @@ hr {
 }
 
 #footer-text a {
-    color: #cc4545;
+    color: #D4B483      ;
 }
 
 #immagini_doppie {
