@@ -8,16 +8,19 @@
         $data = $_POST["data"];
         $ora = $_POST["ora"];
         $tav_num = $_POST["tav_num"];
-        $query1 = "INSERT into tavolo(id_t,data,ora,tavolo) values(default,'$data','$ora','$tav_num')";
+        $query1 = "INSERT INTO tavolo(data, ora, tavolo) VALUES ('$data','$ora','$tav_num') RETURNING id_t";
         $result = pg_query($db_conn, $query1)
-                or die("Errore nell'esecuzione della query ". pg_last_error(). "<br/>");
+            or die("Errore nella query 1: " . pg_last_error());
+        $row = pg_fetch_assoc($result);
+        $id_t = $row['id_t'];
         $nome = $_POST["nome"];
         $cognome = $_POST["cognome"];
         $telefono = $_POST["telefono"];
         $email = $_POST["email"];
-        $query2 = "INSERT into prenotazione(id_p,nome,cognome,telefono,email,id) values(default,'$nome','$cognome','$telefono','$email',default)";
+        $query2 = "INSERT INTO prenotazione(nome, cognome, telefono, email, id) 
+        VALUES ('$nome', '$cognome', '$telefono', '$email', '$id_t')";
         $result = pg_query($db_conn, $query2)
-                or die("Errore nell'esecuzione della query ". pg_last_error(). "<br/>");
+            or die("Errore nell'esecuzione della query ". pg_last_error(). "<br/>");
     }
     //se nella variabile $_POST è settato il campo "del", allora è stata richiesta tramite ajax la cancellazione
     //di una prenotazione, che viene effettuata tramite una DELETE.
