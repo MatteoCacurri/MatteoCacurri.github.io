@@ -3,29 +3,26 @@
     //arrivata da ajax, che viene effettuata tramite due INSERT nel database, una per la tabella prenotazione
     //per i dati del prenotante, e una nella tabella tavolo per sapere data, ora e tavolo prenotato.
     if(isset($_POST["tav_num"])){
-        $db_conn = pg_connect("host=localhost port=5432 dbname=Geppo user=postgres password=password1")
+        $db_conn = pg_connect("host=localhost port=5432 dbname=CocktailBar user=postgres password=postpass!")
                     or die('Could non connect: '.pg_last_error());
         $data = $_POST["data"];
         $ora = $_POST["ora"];
         $tav_num = $_POST["tav_num"];
-        $query1 = "INSERT INTO tavolo(data, ora, tavolo) VALUES ('$data','$ora','$tav_num') RETURNING id_t";
+        $query1 = "INSERT into tavolo(id_t,data,ora,tavolo) values(default,'$data','$ora','$tav_num')";
         $result = pg_query($db_conn, $query1)
-            or die("Errore nella query 1: " . pg_last_error());
-        $row = pg_fetch_assoc($result);
-        $id_t = $row['id_t'];
+                or die("Errore nell'esecuzione della query ". pg_last_error(). "<br/>");
         $nome = $_POST["nome"];
         $cognome = $_POST["cognome"];
         $telefono = $_POST["telefono"];
         $email = $_POST["email"];
-        $query2 = "INSERT INTO prenotazione(nome, cognome, telefono, email, id) 
-        VALUES ('$nome', '$cognome', '$telefono', '$email', '$id_t')";
+        $query2 = "INSERT into prenotazione(id_p,nome,cognome,telefono,email,id) values(default,'$nome','$cognome','$telefono','$email',default)";
         $result = pg_query($db_conn, $query2)
-            or die("Errore nell'esecuzione della query ". pg_last_error(). "<br/>");
+                or die("Errore nell'esecuzione della query ". pg_last_error(). "<br/>");
     }
     //se nella variabile $_POST è settato il campo "del", allora è stata richiesta tramite ajax la cancellazione
     //di una prenotazione, che viene effettuata tramite una DELETE.
     else if(isset($_POST["del"])){
-        $db_conn = pg_connect("host=localhost port=5432 dbname=Geppo user=postgres password=password1")
+        $db_conn = pg_connect("host=localhost port=5432 dbname=CocktailBar user=postgres password=postpass!")
                     or die('Could non connect: '.pg_last_error());
         $nome = $_POST["nome"];
         $cognome = $_POST["cognome"];
@@ -42,7 +39,7 @@
     //se nessuno dei precedenti if ritorna true, allora è stata richiesta tramite ajax la lista dei tavolo occupati
     //per una certa data e ora
     else{
-        $db_conn = pg_connect("host=localhost port=5432 dbname=Geppo user=postgres password=password1")
+        $db_conn = pg_connect("host=localhost port=5432 dbname=CocktailBar user=postgres password=postpass!")
                     or die('Could non connect: '.pg_last_error());
         $data = $_POST["data"];
         $ora = $_POST["ora"];
