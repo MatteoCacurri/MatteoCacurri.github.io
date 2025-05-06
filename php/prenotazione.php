@@ -3,7 +3,7 @@
     //arrivata da ajax, che viene effettuata tramite due INSERT nel database, una per la tabella prenotazione
     //per i dati del prenotante, e una nella tabella tavolo per sapere data, ora e tavolo prenotato.
     if(isset($_POST["tav_num"])){
-        $db_conn = pg_connect("host=localhost port=5432 dbname=CocktailBar user=postgres password=postpass!")
+        $db_conn = pg_connect("host=localhost port=5432 dbname=geppo_pub user=postgres password=password1")
                     or die('Could non connect: '.pg_last_error());
         $data = $_POST["data"];
         $ora = $_POST["ora"];
@@ -39,7 +39,7 @@
     //se nessuno dei precedenti if ritorna true, allora è stata richiesta tramite ajax la lista dei tavolo occupati
     //per una certa data e ora
     else{
-        $db_conn = pg_connect("host=localhost port=5432 dbname=CocktailBar user=postgres password=postpass!")
+        $db_conn = pg_connect("host=localhost port=5432 dbname=geppo_pub user=postgres password=password1")
                     or die('Could non connect: '.pg_last_error());
         $data = $_POST["data"];
         $ora = $_POST["ora"];
