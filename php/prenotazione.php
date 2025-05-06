@@ -22,7 +22,7 @@
     //se nella variabile $_POST è settato il campo "del", allora è stata richiesta tramite ajax la cancellazione
     //di una prenotazione, che viene effettuata tramite una DELETE.
     else if(isset($_POST["del"])){
-        $db_conn = pg_connect("host=localhost port=5432 dbname=CocktailBar user=postgres password=postpass!")
+        $db_conn = pg_connect("host=localhost port=5432 dbname=geppo_pub user=postgres password=password1")
                     or die('Could non connect: '.pg_last_error());
         $nome = $_POST["nome"];
         $cognome = $_POST["cognome"];
