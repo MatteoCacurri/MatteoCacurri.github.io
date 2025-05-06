@@ -68,7 +68,7 @@ $(document).ready(function(){
         var data = document.myFormName.data.value;
         var ora = document.myFormName.ora.value;
         $.ajax({
-            url: "../php/prenotazione.php",
+            url: "php/prenotazione.php",
             type: "POST",
             data: {data,ora},
             success: function(result){
@@ -100,7 +100,7 @@ $(document).ready(function(){
         if(confirm("Hai scelto il tavolo "+tav_num+
                 ", alle ore "+ora+" del "+data+".\nConfermi?")){
             $.ajax({
-                url: "../php/prenotazione.php",
+                url: "php/prenotazione.php",
                 type: "POST",
                 data: {data,ora,tav_num,nome,cognome,telefono,email},
                 success: function(result){
