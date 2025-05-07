@@ -1,56 +1,60 @@
 <?php
-    //se nella variabile $_POST è settato il campo "tav_num", allora è stata richiesta una prenotazione 
-    //arrivata da ajax, che viene effettuata tramite due INSERT nel database, una per la tabella prenotazione
-    //per i dati del prenotante, e una nella tabella tavolo per sapere data, ora e tavolo prenotato.
-    if(isset($_POST["tav_num"])){
+    if (isset($_POST["tav_num"])) {
         $db_conn = pg_connect("host=localhost port=5432 dbname=geppo_pub user=postgres password=password1")
-                    or die('Could non connect: '.pg_last_error());
-        $data = $_POST["data"];
+                    or die('Could not connect: ' . pg_last_error());
+
+        // Conversione della data da "10/06" a "2025-06-10"
+        $data_raw = $_POST["data"];
+        $anno_corrente = date("Y");
+        $data_obj = DateTime::createFromFormat('d/m', $data_raw);
+        $data_obj->setDate($anno_corrente, $data_obj->format('m'), $data_obj->format('d'));
+        $data = $data_obj->format('Y-m-d');
+
         $ora = $_POST["ora"];
         $tav_num = $_POST["tav_num"];
-        $query1 = "INSERT into tavolo(id_t,data,ora,tavolo) values(default,'$data','$ora','$tav_num')";
+
+        echo "Data: $data, Ora: $ora, Tavolo: $tav_num<br/>";
+
+        // Inserimento nella tabella tavolo e recupero id generato
+        $query1 = "INSERT INTO tavolo(id_t, data, ora, tavolo) VALUES (default, '$data', '$ora', '$tav_num') RETURNING id_t";
         $result = pg_query($db_conn, $query1)
-                or die("Errore nell'esecuzione della query ". pg_last_error(). "<br/>");
+                or die("Errore nell'esecuzione della query tavolo: " . pg_last_error() . "<br/>");
+
+        $row = pg_fetch_assoc($result);
+        $id_tavolo = $row['id_t'];
+
+        if (!$id_tavolo) {
+            die("Errore: ID tavolo non recuperato correttamente.<br/>");
+        }
+
+        echo "ID tavolo inserito: $id_tavolo<br/>";
+
+        // Inserimento nella tabella prenotazione con riferimento al tavolo
         $nome = $_POST["nome"];
         $cognome = $_POST["cognome"];
         $telefono = $_POST["telefono"];
         $email = $_POST["email"];
-        $query2 = "INSERT into prenotazione(id_p,nome,cognome,telefono,email,id) values(default,'$nome','$cognome','$telefono','$email',default)";
-        $result = pg_query($db_conn, $query2)
-                or die("Errore nell'esecuzione della query ". pg_last_error(). "<br/>");
-    }
-    //se nella variabile $_POST è settato il campo "del", allora è stata richiesta tramite ajax la cancellazione
-    //di una prenotazione, che viene effettuata tramite una DELETE.
-    else if(isset($_POST["del"])){
-        $db_conn = pg_connect("host=localhost port=5432 dbname=geppo_pub user=postgres password=password1")
-                    or die('Could non connect: '.pg_last_error());
-        $nome = $_POST["nome"];
-        $cognome = $_POST["cognome"];
-        $telefono = $_POST["telefono"];
-        $data = $_POST["data"];
-        $ora = $_POST["ora"];
-        $tavolo = $_POST["tavolo"];
-        $id = $_POST["id"];
-        $query3 = "DELETE from prenotazione where id='$id'; DELETE from tavolo where id_t='$id';";
-        $result = pg_query($db_conn, $query3)
-                or die("Errore nell'esecuzione della query ". pg_last_error(). "<br/>");
 
-    }
-    //se nessuno dei precedenti if ritorna true, allora è stata richiesta tramite ajax la lista dei tavolo occupati
-    //per una certa data e ora
-    else{
-        $db_conn = pg_connect("host=localhost port=5432 dbname=geppo_pub user=postgres password=password1")
-                    or die('Could non connect: '.pg_last_error());
-        $data = $_POST["data"];
-        $ora = $_POST["ora"];
-        $query = "SELECT tavolo FROM tavolo WHERE data='$data' and ora='$ora'";
-        $result = pg_query($db_conn, $query)
-                    or die("Errore nell'esecuzione della query ". pg_last_error(). "<br/>");
-        $dati = array();
-        while ($row = pg_fetch_row($result)){
-            array_push($dati,$row[0]);
+        echo "Dati prenotazione - Nome: $nome, Cognome: $cognome, Tel: $telefono, Email: $email<br/>";
+
+        $query2 = "INSERT INTO prenotazione(id_p, nome, cognome, telefono, email, id_tavolo) VALUES (default, '$nome', '$cognome', '$telefono', '$email', $id_tavolo)";
+        $result2 = pg_query($db_conn, $query2);
+
+        if (!$result2) {
+            die("Errore nella INSERT prenotazione: " . pg_last_error($db_conn) . "<br/>");
         }
-        echo implode(" ",$dati);     
+
+        echo "Prenotazione inserita con successo.<br/>";
+    }
+    else if (isset($_POST["del"])) {
+        $db_conn = pg_connect("host=localhost port=5432 dbname=geppo_pub user=postgres password=password1")
+                    or die('Could not connect: ' . pg_last_error());
+
+        $id = $_POST["del"];
+        $query = "DELETE FROM prenotazione WHERE id_p=$id";
+        $result = pg_query($db_conn, $query)
+                or die("Errore nell'esecuzione della query DELETE: " . pg_last_error() . "<br/>");
+
+        echo "Prenotazione con ID $id cancellata con successo.<br/>";
     }
 ?>
-
