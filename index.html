@@ -107,32 +107,43 @@
   </div>
 </footer>
 <script>
- ScrollReveal().reveal('.reveal', {
-      distance: '100px',
-      duration: 1500,
-      easing: 'cubic-bezier(.215, .61, .355, 1)',
-      interval: 300,
-      origin: 'bottom',
-      reset: true
-    });
-  
-    ScrollReveal().reveal('.reveal_footer', {
-      distance: '100px',
-      duration: 1500,
-      easing: 'cubic-bezier(.215, .61, .355, 1)',
-      interval: 300,
-      origin: 'bottom',
-      reset: true
-    });
-  
-    ScrollReveal().reveal('.zoom', {
-      distance: '100px',
-      duration: 1500,
-      easing: 'cubic-bezier(.215, .61, .355, 1)',
-      interval: 300,
-      origin: 'bottom',
-      reset: true
-    });
+
+  ScrollReveal().reveal('.strip-col-text', {
+    origin: 'left',
+    distance: '120px',
+    duration: 1200,
+    delay: 200,
+    easing: 'ease-out',
+    reset: true
+  });
+
+  ScrollReveal().reveal('.strip-col-img', {
+    scale: 0.85,
+    duration: 1200,
+    delay: 300,
+    opacity: 0,
+    easing: 'ease-in-out',
+    reset: true
+  });
+
+  ScrollReveal().reveal('.reveal_footer', {
+    origin: 'bottom',
+    distance: '60px',
+    duration: 1000,
+    easing: 'ease-in-out',
+    reset: true
+  });
+
+  ScrollReveal().reveal('#slogan', {
+    origin: 'top',
+    distance: '80px',
+    duration: 1300,
+    opacity: 0,
+    easing: 'ease-in-out',
+    reset: false
+  });
+
+
 </script>
 </body>
 </html>
