@@ -1,5 +1,6 @@
+
 body, .bg-dark, .navbar-dark .navbar-nav .nav-link {
-    background-color: #D4B483       !important;  
+    background-color: #D4B483 !important;  
     font-family: 'Lexend Deca', sans-serif;
     color: rgb(255, 255, 255);
 }
@@ -10,37 +11,29 @@ body, .bg-dark, .navbar-dark .navbar-nav .nav-link {
     padding: 6px 12px;
     margin: 0 5px;
     transition: all 0.3s ease;
-    background-color: transparent; /* assicurati sia uniforme */
-    min-height: 40px; /* fissa altezza minima */
+    background-color: transparent;
+    min-height: 40px;
     display: flex;
     align-items: center;
-  }
-  
-  
-  
-  .nav-link:hover {
-    color: black !important;                  /* testo nero al passaggio */
-    border-color: black;                      /* bordo nero */
-    background-color: white;                  /* sfondo bianco per contrasto */
-  }
-
+}
+.nav-link:hover {
+    color: black !important;
+    border-color: black;
+    background-color: white;
+}
 #spazioNav {
     flex-grow: 1;
     max-width: 100%;
 }
-
-
 hr {
     color: #D4B483;
     max-width: 90%;
     margin: 2rem auto;
     padding-top: 2px;
 }
-
 .border_radius { 
     border-radius: 40px 40px 40px 40px; 
 } 
-
 .my-btn {
     margin-top: 20px;
     background-color: #000000;
@@ -51,55 +44,50 @@ hr {
     border-style: none;
     height: 60px;
 }
-
 .my-btn:hover {
     background-color: rgba(255, 0, 0, 0.511);
     border: 2px solid white;
     transform: scale(1.05);
     transition: all 0.3s ease;
-  }
-  
-
+}
 #footer-text {
-    background-color: #D4B483      ;  /* Rosso scuro */
+    background-color: #D4B483;
     padding-top: 0px; 
     height: 60px;
 }
-
 #footer-text .col-4 {
     margin: 0px;
     padding: 0px;
 }
-
 #footer-text a {
     color: white;
     text-decoration: underline;
-  }
-  
-
+}
 #immagini_doppie {
     text-align: center;
 }
-
 #mouse-hover {
     display: none;
 }
-
 #immagini_doppie:hover #no-hover {
     display: none;
 }
-
 #immagini_doppie:hover #mouse-hover {
     display: inline-block;
 }
-
 .nav-link, .my-btn, .border_radius {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
-  }
-
+}
 .nav-link.active {
     background-color: white;
     color: black !important;
     font-weight: bold;
     border-color: white;
+}
+
+/* FIX barra navbar fissa */
+.navbar {
+  background-color: #D4B483 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1050;
 }
