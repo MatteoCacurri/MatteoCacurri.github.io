@@ -53,7 +53,7 @@ hr {
 }
 
 .my-btn:hover {
-    background-color: rgb(255, 0, 0);
+    background-color: rgba(255, 0, 0, 0.511);
     border: 2px solid white;
     transform: scale(1.05);
     transition: all 0.3s ease;
