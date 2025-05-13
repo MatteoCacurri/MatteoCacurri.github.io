@@ -5,8 +5,11 @@ main{
     padding-left: 30px
 }
 
+.text-princ{
+    color:#a93636
 
-/* CSS per lo slogan e il logo */
+}
+
 
 .slogan-box {
     border: 3px solid black;      /* bordo nero */
