@@ -1,61 +1,92 @@
-main{
-    padding-top: 150px;
+
+main {
+    padding-top: 130px;
+    background-color: #D4B483;
+    color: #141414;
 }
-h3{
+
+.section-title {
+    font-family: 'Playfair Display', serif; /* o altro font */
+    color: #000000;                         /* o un marrone tipo #4b2e10 */
+    background-color: rgba(255, 255, 255, 0.6); /* sfondo chiaro semi-trasparente */
+    display: inline-block; /* <--- questo fa adattare il riquadro al testo */
+    padding: 8px 16px; /* spazio interno per rendere il riquadro elegante */
+    border-radius: 12px; /* angoli arrotondati */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.5); /* opzionale */
+
+}
+
+
+
+.carousel-caption p {
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* leggero sfondo chiaro */
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+
+.carousel-caption h3 {
+    font-family: 'Playfair Display', serif;  /* o un altro font a tua scelta */
+    color: #ffffff;                          /* oppure #4b2e10 per un marrone */
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5); /* per contrasto su foto */
+    font-size: 28px;
+}
+
+
+.menu-section {
+    background-color: #D4B483;
+    padding: 40px 0;
+    text-align: center; /* imposta il contenitore per centrare inline-block */
+
+}
+
+h3 {
     font-size: 35px;
     text-align: center;
-    margin-bottom: 40px;
-}
-p{
-    font-size: 18px;
-}
-footer{
-    margin-top: 50px;
+    margin-bottom: 30px;
+    font-family: 'Playfair Display', serif;
+    color: #000;
 }
 
-  
+p {
+    font-size: 17px;
+    color: #333;
+}
 
-.opacity:after{
-    content: ' ';
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    top: 0; left: 0;
-    background: #dc0f0f;
-    opacity: 0.3;
+.carousel.slide {
+    background-color: #D4B483;
+    padding-bottom: 30px;
+    border-radius: 20px;
 }
 
 .carousel-img-wrapper {
-    height: 400px; /* o quanto vuoi */
+    height: 420px;
     overflow: hidden;
+    border-radius: 20px;
+    background-color: #e9decf;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000; /* <-- questo rende i bordi neri */
+}
 
-  }
-  
-  .carousel-img {
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;
-    transform: scale(1.3);
-  }
-  
-#img-lg{
-    
-    min-width: 100%;
-    max-width: 100%;
-    display:block;
+.carousel-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+    border-radius: 20px;
 }
-#img-sm{
-    min-width:100%;
-    max-width: 100%; 
-    display: none;
-}
-#navbarToggler{
-    text-align: center;
+
+.carousel-item:hover .carousel-img {
+    transform: scale(1.2);
 }
 
 /* media queries smartphone */
@@ -79,10 +110,10 @@ footer{
     .footer-icon a{
         padding: 4px;
     }
-    #img-lg{
+    #video-lg{
         display: none;
     }
-    #img-sm{
+    #video-sm{
         display: block;
     }
 }

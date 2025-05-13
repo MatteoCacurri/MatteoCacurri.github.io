@@ -1,52 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geppo Pub</title>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/menu.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geppo Pub</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/menu.css">
 </head>
 <body id="page-top">
-  <!--Navbar-->
+
+  <!-- Navbar -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
-          <img class="animate__animated animate__lightSpeedInLeft	 border_radius" src="img/loghi/f6f3da73.png" width="100px" >
+          <img class="animate__animated animate__lightSpeedInLeft border_radius" src="img/loghi/f6f3da73.png" width="100px">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div id="spazioNav"></div>
         <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a id="default" class="nav-link active" aria-current="page" href="#page-top">MENU</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="prenotazione.html">PRENOTA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contatti.html">CONTATTI</a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+            <li class="nav-item"><a id="default" class="nav-link active" href="#page-top">MENU</a></li>
+            <li class="nav-item"><a class="nav-link" href="prenotazione.html">PRENOTA</a></li>
+            <li class="nav-item"><a class="nav-link" href="contatti.html">CONTATTI</a></li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
+
   <main>
-    <!--Menu Piatti-->
-    <div><h3 class="reveal">I nostri piatti:</h3></div>
-    <div id="carousel1" class="carousel slide reveal" data-bs-ride="carousel">
+    <!-- PIATTI -->
+    <section class="menu-section">
+      <h3 class="reveal section-title">I nostri piatti:</h3>
+      <div id="carousel1" class="carousel slide reveal" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -56,195 +51,198 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="carousel-img-wrapper">
-              <img src="img/Fritti1.png.jpeg" class="d-block w-100 carousel-img"  alt="Margarita">
+              <img src="img/Fritti1.png.jpeg" class="d-block w-100 carousel-img" alt="Fritti">
             </div>
             <div class="carousel-caption d-sm-block">
               <h3>FRITTI</h3>
-              <p>
-                Spezza l'appetito con i nostri fritti completamente fatti in casa!
-              </p>
+              <p>Spezza l'appetito con i nostri fritti completamente fatti in casa!</p>
             </div>
           </div>
           <div class="carousel-item">
             <div class="carousel-img-wrapper">
-              <img src="img/Focaccia.png.jpeg" class="w-100 carousel-img"  alt="Focaccia">
+              <img src="img/Focaccia.png.jpeg" class="w-100 carousel-img" alt="Focaccia">
             </div>
             <div class="carousel-caption d-sm-block">
               <h3>FOCACCIA</h3>
-              <p>
-                La nostra focaccia è l'antipasto perfetto per iniziare il pasto, puoi condirla con crudo,bufala ed altri condimenti che trovi da noi!
-              </p>
+              <p>La nostra focaccia è l'antipasto perfetto per iniziare il pasto...</p>
             </div>
           </div>
           <div class="carousel-item">
             <div class="carousel-img-wrapper">
-              <img src="img/Panino.png.jpeg" class="d-block w-100 carousel-img"  alt="Panino">
+              <img src="img/Panino.png.jpeg" class="d-block w-100 carousel-img" alt="Panino">
             </div>
             <div class="carousel-caption d-sm-block">
               <h3>PANINO</h3>
-              <p>
-                Il nostro panino fatto da noi che ci accompagna da oltre 10 anni, puoi scegliere il tipo di carne, i condimenti e molto altro.
-                Corri a provarlo!
-              </p>
-            </div>  
+              <p>Il nostro panino fatto da noi che ci accompagna da oltre 10 anni...</p>
+            </div>
           </div>
-          <div class="carousel-item ">
+          <div class="carousel-item">
             <div class="carousel-img-wrapper">
-              <img src="img/Piatto.png.jpeg" class="d-block w-100 carousel-img"  alt="Ravioli">
+              <img src="img/Piatto.png.jpeg" class="d-block w-100 carousel-img" alt="Ravioli">
             </div>
             <div class="carousel-caption d-sm-block">
               <h3>RAVIOLI</h3>
-              <p>
-                Prova i nostri ravioli ricotta e spinaci fatti in casa da noi.
-              </p>
+              <p>Prova i nostri ravioli ricotta e spinaci fatti in casa da noi.</p>
             </div>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="carousel-control-prev-icon"></span>
           <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="carousel-control-next-icon"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    <br>
-    <br>
-    <!--DrinkList-->
-    <div><h3 class="reveal">La nostra DrinkList:</h3></div>
-    <div id="carousel2" class="carousel slide reveal" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carousel2" data-bs-slide-to="3" aria-label="Slide 4"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="carousel-img-wrapper">
-            <img src="img/Vino2.png.jpeg" class="d-block w-100 carousel-img"  alt="Vini">
-          </div>
-          <div class="carousel-caption d-sm-block">
-            <h3>VINI</h3>
-            <p>
-              Potrai scegliere tra i nostri vini scelti all'interno della nostra cantina.
-            </p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="carousel-img-wrapper">
-            <img src="img/Birre-ad-alta-e-bassa-fermentazione-quali-sono-le-differenze.png" class="d-block w-100 carousel-img"  alt="Birre">
-          </div>
-          <div class="carousel-caption d-sm-block">
-            <h3>BIRRE</h3>
-            <p>
-              Scegli tra le nostre birre alla spina, accompagnate con taralli e patatine per il perfetto aperitivo.
-            </p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="carousel-img-wrapper">
-            <img src="img/Cocktail.png.jpeg" class="d-block w-100 carousel-img"  alt="Cocktail">
-          </div>
-          <div class="carousel-caption d-sm-block">
-            <h3>COCKTAIL</h3>
-            <p>
-              Scegli tra la nostra varietà di cocktail che ci sono nel nostro locale a seconda del tuo gusto. 
-            </p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="carousel-img-wrapper">
-            <img src="img/Vino1.png.jpeg" class="d-block w-100 carousel-img"  alt="Bollicine">
-          </div>
-          <div class="carousel-caption d-sm-block">
-            <h3>BOLLICINE</h3>
-            <p>
-              Scegli tra le nostre bollicine per un brinidisi.
-            </p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <br>
-    <br>
-    <!--Menu Dessert-->
-    <div><h3 class="reveal">I nostri dolci:</h3></div>
-    <div id="carousel3" class="carousel slide reveal" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carousel3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carousel3" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="carousel-img-wrapper">
-            <img src="img/Dolce1.png.jpeg" class="d-block w-100 carousel-img" alt="Cheesecake">
-          </div>
-          <div class="carousel-caption d-sm-block">
-            <h3>CHEESECAKE</h3>
-            <p>
-              Concludi il pasto con la nostra cheesecake neutra, puoi scegliere tu il gusto!
-            </p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="carousel-img-wrapper">
-            <img src="img/Dolce2.png.jpeg" class="d-block w-100 carousel-img" alt="Budino">
-          </div>
-          <div class="carousel-caption d-sm-block">
-            <h3>BUDINO</h3>
-            <p>
-              Il nostro budino fatto da noi con un mix di sapori tra crema e cioccolata
-            </p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+    </section>
 
+    <!-- DRINK -->
+    <section class="menu-section">
+      <h3 class="reveal section-title">La nostra DrinkList:</h3>
+      <div id="carousel2" class="carousel slide reveal" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carousel2" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#carousel2" data-bs-slide-to="3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-img-wrapper">
+              <img src="img/Vino2.png.jpeg" class="d-block w-100 carousel-img" alt="Vini">
+            </div>
+            <div class="carousel-caption d-sm-block">
+              <h3>VINI</h3>
+              <p>Potrai scegliere tra i nostri vini scelti all'interno della nostra cantina.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-img-wrapper">
+              <img src="img/Birre-ad-alta-e-bassa-fermentazione-quali-sono-le-differenze.png" class="d-block w-100 carousel-img" alt="Birre">
+            </div>
+            <div class="carousel-caption d-sm-block">
+              <h3>BIRRE</h3>
+              <p>Scegli tra le nostre birre alla spina accompagnate con taralli e patatine.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-img-wrapper">
+              <img src="img/Cocktail.png.jpeg" class="d-block w-100 carousel-img" alt="Cocktail">
+            </div>
+            <div class="carousel-caption d-sm-block">
+              <h3>COCKTAIL</h3>
+              <p>Scegli tra la nostra varietà di cocktail a seconda del tuo gusto.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-img-wrapper">
+              <img src="img/Vino1.png.jpeg" class="d-block w-100 carousel-img" alt="Bollicine">
+            </div>
+            <div class="carousel-caption d-sm-block">
+              <h3>BOLLICINE</h3>
+              <p>Scegli tra le nostre bollicine per un brindisi.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- DOLCI -->
+    <section class="menu-section">
+      <h3 class="reveal section-title">I nostri dolci:</h3>
+      <div id="carousel3" class="carousel slide reveal" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel3" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#carousel3" data-bs-slide-to="1"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-img-wrapper">
+              <img src="img/Dolce1.png.jpeg" class="d-block w-100 carousel-img" alt="Cheesecake">
+            </div>
+            <div class="carousel-caption d-sm-block">
+              <h3>CHEESECAKE</h3>
+              <p>Concludi il pasto con la nostra cheesecake neutra, puoi scegliere il gusto!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-img-wrapper">
+              <img src="img/Dolce2.png.jpeg" class="d-block w-100 carousel-img" alt="Budino">
+            </div>
+            <div class="carousel-caption d-sm-block">
+              <h3>BUDINO</h3>
+              <p>Il nostro budino fatto da noi con un mix di sapori tra crema e cioccolata.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
   </main>
+
+  <!-- Footer -->
   <footer class="bg-dark text-center text-white">
     <hr>
     <div class="container p-4">
       <section class="mb-4">
         <h5>Vieni a seguirci sui nostri social per rimanere sempre aggiornato!</h5>
       </section>
-      <!-- Social Icons -->
-    <section class="mb-4 footer-icon">
-      <a class="btn m-1 reveal_footer" href="#!" id="immagini_doppie">
-        <img src="img/loghi/fb_yellow.png" width="50px" id="no-hover">
-        <img src="img\loghi\fb-original.png" width="50px" id="mouse-hover">
-      </a>
-      <a class="btn m-1 reveal_footer" href="#!" id="immagini_doppie">
-        <img src="img\loghi\ig_yellow.png" width="50px" id="no-hover">
-        <img src="img\loghi\ig-original.png" width="50px" id="mouse-hover">
-      </a>
-      <a class="btn m-1 reveal_footer" href="#!" id="immagini_doppie">
-        <img src="img\loghi\tr_yellow.png" width="50px" id="no-hover">
-        <img src="img\loghi\tr-original.png" width="50px" id="mouse-hover">
-      </a>
-    </section>
+      <section class="mb-4 footer-icon">
+        <a class="btn m-1 reveal_footer" href="#!" id="immagini_doppie">
+          <img src="img/loghi/fb_yellow.png" width="50px" id="no-hover">
+          <img src="img/loghi/fb-original.png" width="50px" id="mouse-hover">
+        </a>
+        <a class="btn m-1 reveal_footer" href="#!" id="immagini_doppie">
+          <img src="img/loghi/ig_yellow.png" width="50px" id="no-hover">
+          <img src="img/loghi/ig-original.png" width="50px" id="mouse-hover">
+        </a>
+        <a class="btn m-1 reveal_footer" href="#!" id="immagini_doppie">
+          <img src="img/loghi/tr_yellow.png" width="50px" id="no-hover">
+          <img src="img/loghi/tr-original.png" width="50px" id="mouse-hover">
+        </a>
+      </section>
     </div>
   </footer>
 
   <script>
-    ScrollReveal().reveal('.reveal', { distance: '100px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 500});
+    ScrollReveal().reveal('.reveal', {
+      distance: '100px',
+      duration: 1500,
+      easing: 'cubic-bezier(.215, .61, .355, 1)',
+      interval: 300,
+      origin: 'bottom',
+      reset: true
+    });
+  
+    ScrollReveal().reveal('.reveal_footer', {
+      distance: '100px',
+      duration: 1500,
+      easing: 'cubic-bezier(.215, .61, .355, 1)',
+      interval: 300,
+      origin: 'bottom',
+      reset: true
+    });
+  
+    ScrollReveal().reveal('.zoom', {
+      distance: '100px',
+      duration: 1500,
+      easing: 'cubic-bezier(.215, .61, .355, 1)',
+      interval: 300,
+      origin: 'bottom',
+      reset: true
+    });
   </script>
 </body>
 </html>
