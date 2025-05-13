@@ -6,7 +6,7 @@ main{
 }
 
 .text-princ{
-    color:#a93636
+    color:#000000
 
 }
 
@@ -68,9 +68,11 @@ main{
 }
 
 .section-box {
-  background-color: rgba(255, 255, 255, 0.07);
-  padding: 30px;
+  background: url('../img/texture_marrone.png') no-repeat center center;
+  background-size: cover;
   border-radius: 20px;
+  padding: 30px;
+  color: #f8f8f8;
 }
 
 .row{

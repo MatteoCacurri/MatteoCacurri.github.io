@@ -24,7 +24,7 @@ main {
     font-family: 'Open Sans', sans-serif;
     color: #000000;
     font-size: 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* leggero sfondo chiaro */
+    background-color: rgba(255, 255, 255, 0.5); /* leggero sfondo chiaro */
     padding: 5px 10px;
     border-radius: 10px;
     display: inline-block;
@@ -35,7 +35,7 @@ main {
     font-family: 'Playfair Display', serif;  /* o un altro font a tua scelta */
     color: #ffffff;                          /* oppure #4b2e10 per un marrone */
     text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5); /* per contrasto su foto */
-    font-size: 28px;
+    font-size: 40px;
 }
 
 
