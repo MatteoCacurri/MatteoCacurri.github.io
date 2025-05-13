@@ -1,34 +1,39 @@
 body, .bg-dark, .navbar-dark .navbar-nav .nav-link {
     background-color: #D4B483       !important;  
-    font-family:  'Lexend Deca', sans-serif;;
+    font-family: 'Lexend Deca', sans-serif;
     color: rgb(255, 255, 255);
 }
-
 .nav-link {
-    color: white;                              /* colore del testo normale */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* bordo chiaro iniziale */
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 8px;
     padding: 6px 12px;
     margin: 0 5px;
     transition: all 0.3s ease;
+    background-color: transparent; /* assicurati sia uniforme */
+    min-height: 40px; /* fissa altezza minima */
+    display: flex;
+    align-items: center;
   }
+  
+  
   
   .nav-link:hover {
     color: black !important;                  /* testo nero al passaggio */
     border-color: black;                      /* bordo nero */
     background-color: white;                  /* sfondo bianco per contrasto */
   }
-  
-  
 
-#spazioNav{
-    width: 800px;
+#spazioNav {
+    flex-grow: 1;
+    max-width: 100%;
 }
 
+
 hr {
-    color: #D4B483      ;
-    width: 900px;
-    margin: 0 auto;
+    color: #D4B483;
+    max-width: 90%;
+    margin: 2rem auto;
     padding-top: 2px;
 }
 
@@ -49,8 +54,11 @@ hr {
 
 .my-btn:hover {
     background-color: rgb(255, 0, 0);
-    border-style: double;
-}
+    border: 2px solid white;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+  }
+  
 
 #footer-text {
     background-color: #D4B483      ;  /* Rosso scuro */
@@ -64,8 +72,10 @@ hr {
 }
 
 #footer-text a {
-    color: #D4B483      ;
-}
+    color: white;
+    text-decoration: underline;
+  }
+  
 
 #immagini_doppie {
     text-align: center;
@@ -81,4 +91,15 @@ hr {
 
 #immagini_doppie:hover #mouse-hover {
     display: inline-block;
+}
+
+.nav-link, .my-btn, .border_radius {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+.nav-link.active {
+    background-color: white;
+    color: black !important;
+    font-weight: bold;
+    border-color: white;
 }
