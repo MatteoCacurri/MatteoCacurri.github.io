@@ -1,6 +1,6 @@
 body, .bg-dark, .navbar-dark .navbar-nav .nav-link {
-    background-color: #D4B483       !important;  /* Rosso scuro */
-    font-family: Montserrat;
+    background-color: #D4B483       !important;  
+    font-family:  'Lexend Deca', sans-serif;;
     color: rgb(255, 255, 255);
 }
 
