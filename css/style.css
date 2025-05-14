@@ -31,25 +31,26 @@ hr {
     margin: 2rem auto;
     padding-top: 2px;
 }
-.border_radius { 
-    border-radius: 40px 40px 40px 40px; 
-} 
+
 .my-btn {
-    margin-top: 20px;
-    background-color: #000000;
-    text-align: center;
-    border-radius: 20px;
-    font-size: 28px;
-    color: white;
-    border-style: none;
-    height: 60px;
+  background-color: #caa015;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  min-width: 120px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
 }
 .my-btn:hover {
-    background-color: rgba(255, 0, 0, 0.511);
-    border: 2px solid white;
-    transform: scale(1.05);
-    transition: all 0.3s ease;
+  background-color: rgba(255, 0, 0, 0.511); 
+  border: 2px solid white;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
 }
+
 #footer-text {
     background-color: #D4B483;
     padding-top: 0px; 
@@ -66,15 +67,7 @@ hr {
 #immagini_doppie {
     text-align: center;
 }
-#mouse-hover {
-    display: none;
-}
-#immagini_doppie:hover #no-hover {
-    display: none;
-}
-#immagini_doppie:hover #mouse-hover {
-    display: inline-block;
-}
+
 .nav-link, .my-btn, .border_radius {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
 }
