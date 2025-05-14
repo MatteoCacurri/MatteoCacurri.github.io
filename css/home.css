@@ -28,13 +28,13 @@ main {
     padding-top: 70px;
 }
 #slogan h1{
-    font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Roboto Slab', serif;
     font-size: 110px;
     text-align: center;
     color: #a93636;
 }
 #slogan span{
-    font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Roboto Slab', serif;
     font-size: 130px;
     color: #251c1c;
 }

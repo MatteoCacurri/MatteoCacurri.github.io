@@ -6,8 +6,8 @@ main {
 
 .section-title {
     font-family: 'Playfair Display', serif; /* o altro font */
-    color: #000000;                         /* o un marrone tipo #4b2e10 */
-    background-color: rgba(255, 255, 255, 0.6); /* sfondo chiaro semi-trasparente */
+    color: #ffffff;                         /* o un marrone tipo #4b2e10 */
+    /*background-color: rgba(255, 255, 255, 0.6); /* sfondo chiaro semi-trasparente */
     display: inline-block; /* <--- questo fa adattare il riquadro al testo */
     padding: 8px 16px; /* spazio interno per rendere il riquadro elegante */
     border-radius: 12px; /* angoli arrotondati */
@@ -17,13 +17,42 @@ main {
 
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0,0,0,0.9);
+  border-radius: 50%;
+}
+
+.section-divider {
+  height: 5px;
+  background: white;
+  margin: 40px auto;
+  width: 80%;
+  border-radius: 20px;
+  opacity: 0.7;
+}
+
+
+
+
+.carousel-label {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #ffffff;
+  color: #000000;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  z-index: 10;
+}
 
 
 .carousel-caption p {
     font-family: 'Open Sans', sans-serif;
     color: #000000;
     font-size: 20px;
-    background-color: rgba(255, 255, 255, 0.5); /* leggero sfondo chiaro */
+    background-color: rgba(255, 255, 255, 0.8); /* leggero sfondo chiaro */
     padding: 5px 10px;
     border-radius: 10px;
     display: inline-block;
@@ -62,6 +91,7 @@ p {
     background-color: #D4B483;
     padding-bottom: 30px;
     border-radius: 20px;
+    position: relative;
 }
 
 .carousel-img-wrapper {
