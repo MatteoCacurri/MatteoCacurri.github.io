@@ -37,14 +37,26 @@ $(document).ready(function () {
                 data: $(form).serialize(),
                 success: function (response) {
                     if (response.trim() === "success") {
-                        $("#feedback-message").text("Email inviata!").css("color", "green");
+                        $("#feedback-message")
+                            .removeClass()
+                            .addClass("alert alert-success text-center animate__animated animate__fadeInDown")
+                            .text("Email inviata con successo!")
+                            .fadeIn();
                         form.reset();
                     } else {
-                        $("#feedback-message").text("Errore nell'invio dell'email.").css("color", "red");
+                        $("#feedback-message")
+                            .removeClass()
+                            .addClass("alert alert-danger text-center animate__animated animate__fadeInDown")
+                            .text("Errore nell'invio dell'email.")
+                            .fadeIn();
                     }
                 },
                 error: function () {
-                    $("#feedback-message").text("Errore nella richiesta al server.").css("color", "red");
+                    $("#feedback-message")
+                        .removeClass()
+                        .addClass("alert alert-danger text-center animate__animated animate__fadeInDown")
+                        .text("Errore nella richiesta al server.")
+                        .fadeIn();
                 }
             });
         }
