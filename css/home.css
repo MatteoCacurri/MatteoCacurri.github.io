@@ -406,3 +406,58 @@ footer h5{
   h3 { font-size: 26px; }
   p { font-size: 16px; }
 }
+
+
+/* MIGLIORAMENTI RESPONSIVE MOBILE */
+
+@media (max-width: 767px) {
+  /* Evita che lo zoom distorca l'allineamento */
+  .min-vh-100 {
+    min-height: auto !important;
+  }
+
+  /* Centra i contenitori */
+  .container,
+  .row,
+  .section-box {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+
+  /* Logo e immagine header */
+  #slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .logo-img, .slogan-img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    height: auto;
+    margin-top: -5px;
+    margin-bottom: -5px;
+  }
+
+  /* Imposta larghezza massima e padding uniforme per box */
+  .section-box {
+    width: 100%;
+    padding: 20px 10px;
+  }
+
+  /* Riduci padding principale */
+  main {
+    padding: 30px 10px !important;
+  }
+
+  /* Evita overflow laterali */
+  body {
+    overflow-x: hidden;
+  }
+}
