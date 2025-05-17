@@ -27,17 +27,19 @@ main {
     text-align: center;
     padding-top: 70px;
 }
-#slogan h1{
-  font-family: 'Roboto Slab', serif;
+/*#slogan h1{
+    font-family: 'Playfair Display SC', serif;
+    text-transform: uppercase;
     font-size: 110px;
     text-align: center;
     color: #a93636;
 }
 #slogan span{
-  font-family: 'Roboto Slab', serif;
+    font-family: 'Playfair Display SC', serif;
+    text-transform: uppercase;
     font-size: 130px;
     color: #251c1c;
-}
+}*/
 #slogan h2{
     font-size: 30px;
     font-style: italic;
