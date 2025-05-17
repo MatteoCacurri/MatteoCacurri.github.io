@@ -132,7 +132,7 @@ footer h5{
 @media (max-width: 767px){
     /* slogan e logo */
     #slogan{
-        padding-top: 30px;
+        padding-top: 0px;
     }
     #slogan h1{
         font-size: 140px;
